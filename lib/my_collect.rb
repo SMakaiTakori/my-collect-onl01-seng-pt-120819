@@ -13,6 +13,7 @@ def my_collect(array)
   else
     while i < array.length 
     collection << yield(array[i].upcase)
+    i += 1
   end 
 end
   collection
