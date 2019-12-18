@@ -8,7 +8,7 @@ def my_collect(array)
     puts array.upcase
   end 
   
-  while i < array.length
+  while i < array.length 
     collection << yield(array[i])
     i += 1
   
