@@ -3,7 +3,10 @@ def my_collect(array)
    collection = []
    
   if array.split(" ").count > 1 
-   puts array.split(" ").first    
+   while i < array.length 
+    collection << yield(array[i])
+    i += 1
+    puts array.split(" ").first    
   else
     puts array.upcase
   end 
