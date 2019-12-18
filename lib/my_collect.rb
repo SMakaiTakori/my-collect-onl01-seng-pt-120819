@@ -4,11 +4,12 @@ def my_collect(array)
    
   if array.split(" ").count > 1 
    while i < array.length 
-    collection << yield(array[i])
+    collection << yield(array[i].split(" ").first) 
     i += 1
-    puts array.split(" ").first    
+       
   else
-    puts array.upcase
+    while i < array.length 
+    collection << yield(array[i].)
   end 
   
   while i < array.length 
