@@ -6,12 +6,12 @@ def my_collect(array)
    while i < array.length 
     collection << yield(array[i].split(" ").first) 
     i += 1
-       
+    end   
   else
     while i < array.length 
     collection << yield(array[i].upcase)
   end 
-  
+end
   collection
   
 end  
